@@ -1,0 +1,247 @@
+@media (max-width: 768px) {
+
+  .container {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 20vh;
+  }
+
+  .navbar {
+    padding: 15px;
+    margin: 0;
+  }
+
+  .navbar-brand {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  .hamburger-btn {
+    display: block;
+    order: 3;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s ease;
+  }
+
+  .nav-link:last-child {
+    border-bottom: none;
+  }
+
+  .nav-link.active {
+    justify-content: center;
+  }
+
+  .nav-link:hover {
+    background-color: rgba(94, 59, 238, 0.1);
+  }
+
+ 
+  .container-deskripsi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10vh 0;
+  }
+
+  .image {
+    order: 1;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .profil {
+    float: none;
+    width: 180px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .container-deskripsi-text {
+    order: 2;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .container-deskripsi button {
+    order: 3;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    margin: 10px auto;
+  }
+
+
+  .nama {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  .profesi {
+    font-size: 22px;
+    margin: 5px 0;
+  }
+
+  .teks {
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+
+
+  .section-title {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section-heading {
+    text-align: center;
+    margin: 0 0 30px 0;
+    padding: 5px 0;
+  }
+
+
+  .container-skill {
+    padding-top: 20px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+    margin: 10px auto;
+    height: auto;
+  }
+  .portfolio-card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .portfolio-card {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .portfolio-image {
+    width: 100%;
+    height: auto;
+  }
+  #portofolio {
+    padding-top: 15vh;
+  }
+
+
+  #about {
+    padding: 17vh 0;
+  }
+
+  .container-about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-about {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .image-about img {
+    width: 250px;
+    margin: 20px auto;
+  }
+
+  .text-about {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+
+  .dark-mode .nav-links {
+    background-color: #26282b;
+  }
+
+  .dark-mode .nav-link {
+    border-bottom-color: #444;
+  }
+
+  .dark-mode .nav-link:hover {
+    background-color: rgba(142, 5, 194, 0.1);
+  }
+}
+
+/* ===== MEDIA QUERY FOR MOBILE (MAX-WIDTH: 576px) ===== */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
+    padding: 6px 0;
+  }
+
+  .profil {
+    width: 150px;
+  }
+
+  .nama {
+    font-size: 15px;
+  }
+
+  .profesi {
+    font-size: 20px;
+  }
+
+  .teks {
+    font-size: 13px;
+  }
+
+  .card,
+  .portfolio-card {
+    width: 95%;
+  }
+
+  .image-about img {
+    width: 200px;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+
+  .section-heading {
+    font-size: 24px;
+  }
+}
